@@ -29,7 +29,7 @@ body::before {
     left: 0;
     width: 100%;
     height: 100%;
-    background-color: rgba(0, 0, 0, .05);
+    background-color: rgba(0, 0, 0, .55);
     z-index: -1;
 
 }
@@ -47,15 +47,14 @@ body::before {
 
 
 .banner__text-cinema {
-    box-shadow: rgba(0, 0, 0, 0.4) 0px 30px 90px;
-    padding: 4vw 8vw;
+    box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
+    padding: 3vw 6vw;
     text-align: center;
     color:var(--intro-font-color);
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 7em;
-    margin-top: .5em;
-    margin-bottom: 1em;
+    margin: .5em 2em 1em 2em;
 }
 
 .banner__text-user {
