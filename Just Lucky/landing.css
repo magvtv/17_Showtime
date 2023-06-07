@@ -15,7 +15,10 @@ body {
     width: 100%;
     overflow: hidden;
     background-color: var(--background-shade);
-    background-image: url();
+    background-image: url(./assets/intro-banner.jpg);
+    background-position: center center;
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 
 .only-text {
