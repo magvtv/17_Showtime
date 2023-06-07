@@ -50,18 +50,33 @@ body::before {
     box-shadow: rgba(0, 0, 0, 0.56) 0px 22px 70px 4px;
     padding: 3vw 6vw;
     text-align: center;
-    color:var(--intro-font-color);
+    color: var(--intro-font-color);
     font-family: 'Lato', sans-serif;
     font-weight: 900;
     font-size: 7em;
     margin: .5em 2em 1em 2em;
 }
 
-.banner__text-user {
+.banner__text-bottom {
     text-align: center;
     color: var(--intro-font-color);
     font-family: 'Lato', sans-serif;
-    padding: 1em 1.5em;
-    font-size: 1.25em;
+    padding: .5em 1em;
+    max-width: 50%;
+    font-size: 1.45em;
     font-weight: 700;
+
+    overflow: hidden;
+    white-space: nowrap;
+    animation: typing 5s steps(120) infinite;
+    /* border-right: 1.05em solid lime; */
+}
+
+@keyframes typing {
+    from {
+        width: 0;
+    }
+    to {
+        width: 100%;
+    }
 }

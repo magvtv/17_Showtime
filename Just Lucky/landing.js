@@ -1,6 +1,9 @@
-
+// initialization of variables
 const introPhrase = document.getElementById('intro');
+const random = Math.random()
 
+
+// array of load texts, function to render the text upon loading
 const loadingPhrases = [
     "Loading the thrills and spills from big screens...",
     "Grabbing, from Hollywood, the finest gems for you...",
@@ -13,9 +16,10 @@ const loadingPhrases = [
 
 const getRandomIntro = () => {
     const phrases = loadingPhrases.length
-    let randomIndex = Math.floor(Math.random() * phrases);
+    let randomIndex = Math.floor(random * phrases);
     return loadingPhrases[randomIndex];
 }
+
 
 const anyPhrase = getRandomIntro()
 introPhrase.innerText = `${anyPhrase}`
