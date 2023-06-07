@@ -1,0 +1,37 @@
+:root {
+    --background-shade: rgb(29, 29, 29);
+    --intro-font-color: 
+}
+
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body {
+    height: 100vh;
+    width: 100%;
+    overflow: hidden;
+    background-color: var(--background-shade);
+}
+
+.only-text {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border: 2px solid red;
+    position: relative;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+}
+
+
+#intro {
+    padding: 5vw 10vw;
+    text-align: center;
+    color: white;
+    font-size: 3.5em;
+}
