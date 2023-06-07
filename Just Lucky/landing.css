@@ -64,6 +64,7 @@ body::before {
     padding: .5em 1em;
     max-width: 50%;
     font-size: 1.45em;
+    margin-bottom: 2.5em;
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
