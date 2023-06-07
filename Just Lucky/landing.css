@@ -65,11 +65,9 @@ body::before {
     max-width: 50%;
     font-size: 1.45em;
     font-weight: 700;
-
     overflow: hidden;
     white-space: nowrap;
     animation: typing 5s steps(120) infinite;
-    /* border-right: 1.05em solid lime; */
 }
 
 @keyframes typing {
