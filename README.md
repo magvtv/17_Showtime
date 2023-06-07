@@ -1,3 +1,4 @@
+![Uploading Screenshot from 2023-06-07 20-04-31.png…]()
 # 17_Showtime: Cinema Landing Page
 
 - The codename is how I serially categorize my project on my system. Anyway, this is a cinema landing page project built using React.js. It provides an interactive and user-friendly interface for movie enthusiasts to explore movies, view showtimes, and book tickets. 
