@@ -1,3 +1,6 @@
+@import url('https://fonts.googleapis.com/css2?family=Lato:wght@100;300;400;700;900&family=Monomaniac+One&display=swap');
+
+
 :root {
     --background-shade: rgb(29, 29, 29);
     --intro-font-color: 
@@ -25,7 +28,6 @@ body {
     display: flex;
     justify-content: center;
     align-items: center;
-    /* border: 2px solid red; */
     position: relative;
     top: 50%;
     left: 50%;
@@ -36,6 +38,6 @@ body {
 #intro {
     padding: 5vw 10vw;
     text-align: center;
-    color: white;
+    color: #fff;
     font-size: 3.5em;
 }
