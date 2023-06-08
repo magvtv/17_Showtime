@@ -16,7 +16,7 @@ body {
     height: 100vh;
     width: 100%;
     overflow: hidden;
-    background-image: url(./assets/intro-banner.jpg);
+    background-image: url(../assets/intro-banner.jpg);
     background-position: center center;
     background-repeat: no-repeat;
     background-size: cover;
