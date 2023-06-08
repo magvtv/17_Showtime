@@ -1,4 +1,3 @@
-![Uploading Screenshot from 2023-06-07 20-04-31.png…]()
 # 17_Showtime: Cinema Landing Page
 
 - The codename is how I serially categorize my project on my system. Anyway, this is a cinema landing page project built using React.js. It provides an interactive and user-friendly interface for movie enthusiasts to explore movies, view showtimes, and book tickets. 
@@ -48,3 +47,4 @@ This project is licensed under the [Creative Commons License](LICENSE).
 Thanks to the creators of React.js and other open-source libraries used in this project. Special thanks to the contributors and supporters.
 Feel free to explore the cinema landing page and provide feedback. Enjoy your in-website experience!
 
+![Screenshot from 2023-06-07 20-04-31](https://github.com/magvtv/17_Showtime/assets/62017731/ccaada38-cec5-4b99-b57d-16e14f62e0f4)
