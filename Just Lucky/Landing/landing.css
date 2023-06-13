@@ -9,7 +9,7 @@ a {
     text-decoration: none;
 }
 
-.top__section-nav {
+.banner__section-nav {
     margin: 2em;
 }
 
@@ -43,4 +43,9 @@ nav>.nav__cinema-logo>h1 {
     padding: .75em 2em;
     border-radius: .75em;
     border: none;
+}
+
+
+.banner__section-hero {
+    border: 1px solid yellowgreen;
 }
