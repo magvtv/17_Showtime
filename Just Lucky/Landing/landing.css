@@ -4,11 +4,6 @@
     box-sizing: border-box;
 }
 
-
-a {
-    text-decoration: none;
-}
-
 .banner__section-nav {
     margin: 2em;
 }
@@ -21,7 +16,7 @@ nav {
     align-items: center;
 }
 
-. .nav__links {
+.nav__links {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -30,6 +25,12 @@ nav {
 .nav__links>.nav__link {
     text-align: center;
     margin: 0 2em;
+}
+
+.nav__links > a.nav__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
 }
 
 .nav__cinema-logo>span {
