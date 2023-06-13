@@ -21,8 +21,7 @@ nav {
     align-items: center;
 }
 
-
-.nav__links {
+. .nav__links {
     display: flex;
     justify-content: space-around;
     align-items: center;
@@ -33,13 +32,19 @@ nav {
     margin: 0 2em;
 }
 
-
-nav>.nav__cinema-logo>h1 {
-    font-size: 1.7em;
-    text-transform: uppercase;
+.nav__cinema-logo>span {
+    display: flex;
+    justify-content: center;
+    align-items: center;
 }
 
-.nav__button > button {
+.nav__cinema-logo>span>h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.nav__button>button {
     padding: .75em 2em;
     border-radius: .75em;
     border: none;
@@ -60,7 +65,7 @@ nav>.nav__cinema-logo>h1 {
     flex-direction: column;
 }
 
-.film__detail > #film-title {
+.film__detail>#film-title {
     padding: .25em;
     max-width: 50%;
     font-size: 3em;
@@ -97,6 +102,3 @@ nav>.nav__cinema-logo>h1 {
     flex-direction: column;
     font-size: .89em;
 }
-
-
-
