@@ -43,9 +43,60 @@ nav>.nav__cinema-logo>h1 {
     padding: .75em 2em;
     border-radius: .75em;
     border: none;
+    cursor: pointer;
 }
 
 
 .banner__section-hero {
-    border: 1px solid yellowgreen;
+    margin: 2em;
+    padding: 1em 2em;
+    border: 1px solid black;
 }
+
+.film__detail {
+    width: 100%;
+    border: 1px solid yellowgreen;
+    display: flex;
+    flex-direction: column;
+}
+
+.film__detail > #film-title {
+    padding: .25em;
+    max-width: 50%;
+    font-size: 3em;
+    margin-bottom: 2em;
+}
+
+.film__schedule {
+    display: inline-block;
+    margin-top: 1.5em;
+}
+
+
+.film__schedule-book {
+    max-width: 50%;
+    display: flex;
+    justify-content: space-between;
+    place-items: center;
+}
+
+.film__schedule-book button {
+    border-radius: .75em;
+    border: none;
+    padding: 1em 3em;
+    text-transform: uppercase;
+    font-size: .89em;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.film__schedule-data {
+    border: 1px solid red;
+    padding: 0 2em;
+    display: flex;
+    flex-direction: column;
+    font-size: .89em;
+}
+
+
+
