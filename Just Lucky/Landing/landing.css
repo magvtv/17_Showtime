@@ -4,13 +4,10 @@
     box-sizing: border-box;
 }
 
-<<<<<<< Updated upstream
-=======
 a {
     text-decoration: none;
 }
 
->>>>>>> Stashed changes
 .banner__section-nav {
     margin: 2em;
 }
@@ -65,24 +62,6 @@ nav {
 .banner__section-hero {
     margin: 2em;
     padding: 1em 2em;
-<<<<<<< Updated upstream
-    border: 1px solid black;
-}
-
-.film__detail {
-    width: 100%;
-    border: 1px solid yellowgreen;
-    display: flex;
-    flex-direction: column;
-}
-
-.film__detail>#film-title {
-    padding: .25em;
-    max-width: 50%;
-    font-size: 3em;
-    margin-bottom: 2em;
-=======
->>>>>>> Stashed changes
 }
 
 .film__schedule {
@@ -126,6 +105,10 @@ nav {
 }
 
 .film__schedule-data {
+<<<<<<< Updated upstream
+=======
+    /* border: 1px solid red; */
+>>>>>>> Stashed changes
     padding: 0 2em;
     display: flex;
     flex-direction: column;
