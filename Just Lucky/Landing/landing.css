@@ -95,7 +95,6 @@ nav {
     padding: 0.25em 3em;
     margin-top: 2em;
     display: flex;
-    border: 1px solid green;
     justify-content: space-between;
     place-items: center;
 }
@@ -119,6 +118,7 @@ nav {
 }
 
 .film__schedule-right {
+    border: 1px solid green;
     display: flex;
     justify-content: flex-end;
     align-items: flex-end;
