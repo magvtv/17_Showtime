@@ -4,6 +4,13 @@
     box-sizing: border-box;
 }
 
+<<<<<<< Updated upstream
+=======
+a {
+    text-decoration: none;
+}
+
+>>>>>>> Stashed changes
 .banner__section-nav {
     margin: 2em;
 }
@@ -58,6 +65,7 @@ nav {
 .banner__section-hero {
     margin: 2em;
     padding: 1em 2em;
+<<<<<<< Updated upstream
     border: 1px solid black;
 }
 
@@ -73,16 +81,35 @@ nav {
     max-width: 50%;
     font-size: 3em;
     margin-bottom: 2em;
+=======
+>>>>>>> Stashed changes
 }
 
 .film__schedule {
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    margin-top: 1em;
+}
+
+.film__schedule-title {
+    padding: .25em;
+    max-width: 50%;
+    font-size: 3em;
+    margin-bottom: 3em;
+
+}
+
+.film__schedule {
+    margin-top: 2em;
     display: inline-block;
-    margin-top: 1.5em;
 }
 
 
 .film__schedule-book {
+    padding: 0.25em;
     max-width: 50%;
+    margin-top: 2em;
     display: flex;
     justify-content: space-between;
     place-items: center;
@@ -99,9 +126,20 @@ nav {
 }
 
 .film__schedule-data {
-    border: 1px solid red;
     padding: 0 2em;
     display: flex;
     flex-direction: column;
     font-size: .89em;
+<<<<<<< Updated upstream
 }
+=======
+}
+
+.film__schedule-trailer {
+    float: right;
+
+}
+
+
+
+>>>>>>> Stashed changes
