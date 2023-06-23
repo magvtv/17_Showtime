@@ -31,7 +31,7 @@ nav {
     margin: 0 2em;
 }
 
-.nav__links > a.nav__link {
+.nav__links>a.nav__link {
     text-decoration: none;
     text-transform: capitalize;
     color: black;
@@ -86,16 +86,16 @@ nav {
 }
 
 .film__schedule-left {
+    border: 1px solid cadetblue;
     display: flex;
     justify-content: flex-start;
     align-items: start;
 }
 
- .film__schedule-left .film__schedule-book {
+.film__schedule-left .film__schedule-book {
     padding: 0.25em 3em;
-    margin-top: 2em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     place-items: center;
 }
 
@@ -110,7 +110,9 @@ nav {
 }
 
 .film__schedule-left .film__schedule-data {
-    padding: 0 2em;
+    padding: 0.05em 2em;
+    margin-left: 10em;
+    border: 1px solid black;
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
@@ -134,7 +136,7 @@ nav {
     align-content: flex-end;
 }
 
-.banner__section-socials > p {
+.banner__section-socials>p {
     margin-top: 6em;
 }
 
@@ -155,7 +157,3 @@ nav {
     border: none;
     border-radius: 50%;
 }
-
-
-
-
