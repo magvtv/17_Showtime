@@ -28,3 +28,17 @@ function preloader(page) {
         }
     }, 100);
 }
+
+const slider = document.querySelectorAll('.banner__section-slider')
+const slideNumbers = document.querySelector('.slider__numbers')
+
+slider.forEach((slide, index) => {
+    const slideNumber = document.createElement('span');
+    slideNumber.textContent = index + 1
+    slideNumber.classlist.add('slide-number');
+    if (index === 0) {
+        slideNumber.classList.add('current-slide')
+    }
+    slideNumbersContainer.appendChild(slideNumber)
+})
+
