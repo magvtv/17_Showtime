@@ -9,6 +9,7 @@ a {
 }
 
 .banner__section-nav {
+    position: relative;
     margin: 2em;
 }
 
@@ -128,15 +129,24 @@ nav {
 
 }
 
-.film__schedule-top2 .banner__section-socials {
+.film__schedule-top2 .banner__section-slider {
     display: flex;
     /* flex-flow: column-reverse wrap; */
-    align-content: flex-end;
+    /* justify-content: space-between; */
 }
 
-.banner__section-socials>p {
-    margin-top: 6em;
+.slider__arrows {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    /* max-width: 50%; */
+    /* margin-top: 6em; */
 }
+
+.slider__arrows > button {
+    padding: 1em 2em;
+}
+
 
 
 .film__schedule-top2 .film__schedule-trailer {
