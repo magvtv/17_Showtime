@@ -138,13 +138,34 @@ nav {
 .slider__arrows {
     position: relative;
     display: flex;
-    justify-content: space-between;
-    /* max-width: 50%; */
-    /* margin-top: 6em; */
+    margin-top: 6em;
 }
 
 .slider__arrows > button {
-    padding: 1em 2em;
+    padding: .5em;
+    /* background-color: chartreuse; */
+    border-radius: .25em;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+}
+
+.slider__arrows #prev {
+    margin-right: 10em;
+}
+.slider__arrows #next {
+    margin-left: 10em;
+}
+
+#prev, #next {
+    cursor: pointer;
+
+}
+
+.slider__numbers {
+    display: flex;
+    justify-content: center;
+    place-items: center;
 }
 
 
