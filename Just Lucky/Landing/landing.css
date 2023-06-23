@@ -117,7 +117,7 @@ nav {
     font-size: .89em;
 }
 
-.film__schedule-right {
+.film__schedule-top2 {
     border: 1px solid green;
     /* padding: 1.5em 0; */
     display: flex;
@@ -128,7 +128,7 @@ nav {
 
 }
 
-.film__schedule-right .banner__section-socials {
+.film__schedule-top2 .banner__section-socials {
     display: flex;
     /* flex-flow: column-reverse wrap; */
     align-content: flex-end;
@@ -139,7 +139,7 @@ nav {
 }
 
 
-.film__schedule-right .film__schedule-trailer {
+.film__schedule-top2 .film__schedule-trailer {
     display: flex;
     justify-content: flex-end;
     /* padding: .25em; */
@@ -148,7 +148,7 @@ nav {
 }
 
 
-.film__schedule-right #watch-trailer {
+.film__schedule-top2 #watch-trailer {
     padding: 3.2em 1em;
     /* float: right; */
     margin-bottom: 0.5em;
