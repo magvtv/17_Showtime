@@ -9,6 +9,7 @@ a {
 }
 
 .banner__section-nav {
+    position: relative;
     margin: 2em;
 }
 
@@ -31,7 +32,7 @@ nav {
     margin: 0 2em;
 }
 
-.nav__links > a.nav__link {
+.nav__links>a.nav__link {
     text-decoration: none;
     text-transform: capitalize;
     color: black;
@@ -75,8 +76,8 @@ nav {
 .film__schedule-title {
     padding: .25em;
     max-width: 50%;
-    font-size: 3em;
-    margin-bottom: 3em;
+    font-size: 3.5em;
+    margin-bottom: 2em;
 
 }
 
@@ -85,21 +86,20 @@ nav {
     display: inline-block;
 }
 
-.film__schedule-left {
+.film__schedule-top1 {
     display: flex;
     justify-content: flex-start;
     align-items: start;
 }
 
- .film__schedule-left .film__schedule-book {
+.film__schedule-top1 .film__schedule-book {
     padding: 0.25em 3em;
-    margin-top: 2em;
     display: flex;
-    justify-content: space-between;
+    justify-content: space-evenly;
     place-items: center;
 }
 
-.film__schedule-left .film__schedule-book button {
+.film__schedule-top1 .film__schedule-book button {
     border-radius: .75em;
     border: none;
     padding: 1em 3em;
@@ -109,41 +109,88 @@ nav {
     cursor: pointer;
 }
 
-.film__schedule-left .film__schedule-data {
-    padding: 0 2em;
+.film__schedule-top1 .film__schedule-data {
+    padding: 0.05em 2em;
+    margin-left: 10em;
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
     font-size: .89em;
 }
 
-.film__schedule-right {
-    border: 1px solid green;
+.film__schedule-top2 {
+    /* padding: 1.5em 0; */
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: row;
 
 }
 
-
-.film__schedule-right .film__schedule-trailer {
+.film__schedule-top2 .banner__section-slider {
     display: flex;
-    max-width: 50%;
-    padding: .25em;
+    /* flex-flow: column-reverse wrap; */
+    /* justify-content: space-between; */
+}
+
+.slider__arrows {
+    position: relative;
+    display: flex;
+    margin-top: 6em;
+}
+
+.slider__arrows > button {
+    padding: .5em 1em;
+    background-color: transparent;
+    border-radius: .25em;
+    font-size: 1.5em;
+    border: none;
+    outline: none;
+}
+
+.slider__arrows > button > i {
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+.slider__arrows #prev {
+    margin-right: 10em;
+}
+.slider__arrows #next {
+    margin-left: 10em;
+}
+
+#prev, #next {
+    cursor: pointer;
+    
+}
+
+.slider__numbers {
+    font-size: 1.5em;
+    font-weight: 800;
+    padding: 0 .5em;
+    display: flex;
+    justify-content: center;
+    place-items: center;
+}
+
+
+
+.film__schedule-top2 .film__schedule-trailer {
+    display: flex;
+    justify-content: flex-end;
+    /* padding: .25em; */
     flex-direction: column;
     border: 2px solid brown;
 }
 
 
-.film__schedule-right #watch-trailer {
-    padding: 3.5em 1.5em;
+.film__schedule-top2 #watch-trailer {
+    padding: 3.2em 1em;
     /* float: right; */
     margin-bottom: 0.5em;
     border: none;
     border-radius: 50%;
 }
-
-
-
-

@@ -1,11 +1,9 @@
-// Wait for the page to fully load
-// window.addEventListener("load", function () {
-//     // Add the "loaded" class to the body to trigger the unveiling animation
-//     document.body.classList.add("loaded");
-// });
-
 const page = document.body;
 const content = document.getElementById('preloader');
+
+const slider = document.querySelectorAll('.banner__section-slider')
+const slideNumbers = document.querySelector('.slider__numbers')
+
 
 function preloader(page) {
     // Create a curtain element.
@@ -27,4 +25,31 @@ function preloader(page) {
             clearInterval(timer);
         }
     }, 100);
+}
+
+
+slider.forEach((slide, index) => {
+    const slideNumber = document.createElement('span');
+    slideNumber.textContent = index + 1
+    slideNumber.classList.add('slide-number');
+    if (index === 0) {
+        slideNumber.classList.add('current-slide')
+    }
+    slideNumbers.appendChild(slideNumber)
+})
+
+const prevSliderButton = document.getElementById('prev'), nextSliderButton = document.getElementById('next')
+let currentSlide = document.getElementsByClassName('current-slide')
+
+function nextSlide() {
+    currentSlide++
+    if (currentSlide >= 10) {
+        currentSlide = 0
+    }
+}
+
+nextSliderButton.addEventListener('click', nextSlide)
+
+function showSlide(slideNumber) {
+
 }
