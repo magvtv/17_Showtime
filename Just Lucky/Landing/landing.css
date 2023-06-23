@@ -85,21 +85,20 @@ nav {
     display: inline-block;
 }
 
-.film__schedule-left {
-    border: 1px solid cadetblue;
+.film__schedule-top1 {
     display: flex;
     justify-content: flex-start;
     align-items: start;
 }
 
-.film__schedule-left .film__schedule-book {
+.film__schedule-top1 .film__schedule-book {
     padding: 0.25em 3em;
     display: flex;
     justify-content: space-evenly;
     place-items: center;
 }
 
-.film__schedule-left .film__schedule-book button {
+.film__schedule-top1 .film__schedule-book button {
     border-radius: .75em;
     border: none;
     padding: 1em 3em;
@@ -109,10 +108,9 @@ nav {
     cursor: pointer;
 }
 
-.film__schedule-left .film__schedule-data {
+.film__schedule-top1 .film__schedule-data {
     padding: 0.05em 2em;
     margin-left: 10em;
-    border: 1px solid black;
     display: flex;
     justify-content: flex-end;
     flex-direction: column-reverse;
@@ -130,7 +128,7 @@ nav {
 
 }
 
-.banner__section-socials {
+.film__schedule-right .banner__section-socials {
     display: flex;
     /* flex-flow: column-reverse wrap; */
     align-content: flex-end;
