@@ -119,25 +119,37 @@ nav {
 
 .film__schedule-right {
     border: 1px solid green;
+    /* padding: 1.5em 0; */
     display: flex;
-    justify-content: flex-end;
-    align-items: flex-end;
-    flex-direction: column;
+    justify-content: space-between;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: row;
 
+}
+
+.banner__section-socials {
+    display: flex;
+    /* flex-flow: column-reverse wrap; */
+    align-content: flex-end;
+}
+
+.banner__section-socials > p {
+    margin-top: 6em;
 }
 
 
 .film__schedule-right .film__schedule-trailer {
     display: flex;
-    max-width: 50%;
-    padding: .25em;
+    justify-content: flex-end;
+    /* padding: .25em; */
     flex-direction: column;
     border: 2px solid brown;
 }
 
 
 .film__schedule-right #watch-trailer {
-    padding: 3.5em 1.5em;
+    padding: 3.2em 1em;
     /* float: right; */
     margin-bottom: 0.5em;
     border: none;
