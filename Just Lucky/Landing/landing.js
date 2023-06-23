@@ -35,10 +35,12 @@ const slideNumbers = document.querySelector('.slider__numbers')
 slider.forEach((slide, index) => {
     const slideNumber = document.createElement('span');
     slideNumber.textContent = index + 1
-    slideNumber.classlist.add('slide-number');
+    slideNumber.classList.add('slide-number');
     if (index === 0) {
         slideNumber.classList.add('current-slide')
     }
-    slideNumbersContainer.appendChild(slideNumber)
+    slideNumbers.appendChild(slideNumber)
 })
 
+
+slider
