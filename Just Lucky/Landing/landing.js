@@ -1,7 +1,6 @@
 const page = document.body;
 const content = document.getElementById('preloader');
 
-const apiKey = '0e71702fa02bdd6d05fa9dc6d4f9cefb'
 const apiUrl = 'https://www.themoviedb.org/movie/now-playing'
 const urlWithApiKey = `${apiUrl}?api_key=${apiKey}`
 
@@ -61,3 +60,12 @@ function nextSlide() {
 /*
     adding tmdb integration to the website
 */
+fetch(urlWithApiKey)
+    .then(response => response.json())
+    .then(data => {
+        console.log(data)
+    })
+    .catch(error => {
+        console.error("Something is wrong", error)
+
+    })
