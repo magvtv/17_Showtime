@@ -1,6 +1,10 @@
 const page = document.body;
 const content = document.getElementById('preloader');
 
+const apiKey = '0e71702fa02bdd6d05fa9dc6d4f9cefb'
+const apiUrl = 'https://www.themoviedb.org/movie/now-playing'
+const urlWithApiKey = `${apiUrl}?api_key=${apiKey}`
+
 const slider = document.querySelectorAll('.banner__section-slider')
 const slideNumbers = document.querySelector('.slider__numbers')
 
