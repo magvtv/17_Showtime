@@ -4,7 +4,9 @@ const content = document.getElementById('preloader');
 const slider = document.querySelectorAll('.banner__section-slider')
 const slideNumbers = document.querySelector('.slider__numbers')
 
-
+/* 
+    preloader functions
+*/
 function preloader(page) {
     // Create a curtain element.
     // let curtain = document.createElement("div");
@@ -28,6 +30,10 @@ function preloader(page) {
 }
 
 
+/*
+    tried making the slider arrows work
+*/
+
 slider.forEach((slide, index) => {
     const slideNumber = document.createElement('span');
     slideNumber.textContent = index + 1
@@ -48,8 +54,6 @@ function nextSlide() {
     }
 }
 
-nextSliderButton.addEventListener('click', nextSlide)
-
-function showSlide(slideNumber) {
-
-}
+/*
+    adding tmdb integration to the website
+*/
