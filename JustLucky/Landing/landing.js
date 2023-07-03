@@ -3,7 +3,7 @@
 
 // Read the contents of the config.json file
 const fs = require('fs');
-const configData = fs.readFileSync('config.json', 'UTF-8');
+const configData = fs.readFileSync('config.json', 'utf-8');
 // Parse the JSON data
 const config = JSON.parse(configData);
 // Access the API key
@@ -73,6 +73,6 @@ fetch(urlWithApiKey)
         console.log(data)
     })
     .catch(error => {
-        console.error("Something is wrong\n", error)
+        console.error("Something is wrong", error)
 
     })
