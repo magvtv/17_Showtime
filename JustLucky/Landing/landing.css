@@ -298,8 +298,9 @@ section.main {
 
 .main__header-search i {
     position: absolute;
-    margin-right: .75em;
+    margin-right: .5em;
     padding: .5em;
+    font-size: 1.05em;
     /* display: flex; */
     /* text-align: center; */
 }
