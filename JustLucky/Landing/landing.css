@@ -190,28 +190,43 @@ nav {
 
 .film__schedule-top2 .film__schedule-trailer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 1em;
 }
 
 
-.film__schedule-trailer #watch-trailer {
-    padding: 3em;
+.film__schedule-trailer button#watch-trailer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* padding: 3em; */
+    width: 6em;
+    height: 6em;
     margin-bottom: 0.5em;
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    transition: ease-out;
+    transition-duration: 400ms;
+}
+
+.film__schedule-trailer button:hover {
+    background-color: crimson;
+    color: white;
+    transform: scale(1.1);
 }
 #watch-trailer > i {
     display: flex;
-    place-items: center;
+    justify-content: center;
+    align-items: center;
     font-size: 1.5em;
     font-weight: bold;
 }
 
 .film__schedule-trailer #trailer-detail  {
-    padding: 0.25em;
+    padding: 0.5em;
     display: flex;
     justify-content: center;
     font-size: .9em;
