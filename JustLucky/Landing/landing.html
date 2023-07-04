@@ -10,7 +10,7 @@
     <title> Home | Century Cinemax </title>
 </head>
 <body>
-    <div class="banner__section-nav">
+    <div class="nav_banner">
         <nav>
             <div class="nav__cinema-logo">
                     <span id="name1">
@@ -25,7 +25,7 @@
                     </span>
             </div>
             <div class="nav__links">
-                <a href="/schedule" class="nav__link">
+                <a href="/schedule" class="nav__link active">
                     schedule
                 </a>
                 <a href="/films" class="nav__link">
@@ -47,7 +47,7 @@
         </nav>
     </div>
 
-    <div class="banner__section-hero">
+    <section class="banner_hero">
         <div class="film__schedule">
             <h2 class="film__schedule-title" id="film-title">
                 Guardians of the Galaxy: Volume 3
@@ -87,16 +87,20 @@
 
                 <div class="film__schedule-trailer">
                     <button type="" id="watch-trailer">
-                        press play
+                        <i class='bx bx-right-arrow'></i>
                     </button>
-                    <span id="watch-detail">
+                    <span id="trailer-detail">
                         watch trailer
                     </span>
                 </div>
             </div>
             
         </div>
-    </div>
+    </section>
+
+    <div class="xline"></div>
+
+    <!-- div.main__sec -->
     <script src="./landing.js"></script>
 </body>
 </html>

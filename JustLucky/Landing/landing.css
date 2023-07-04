@@ -1,3 +1,8 @@
+:root {
+    --default-red: rgb(220, 20, 60);
+    --text-color: rgb(240, 240, 240);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -8,7 +13,7 @@ a {
     text-decoration: none;
 }
 
-.banner__section-nav {
+.nav_banner {
     position: relative;
     margin: 2em;
 }
@@ -29,13 +34,23 @@ nav {
 
 .nav__links>.nav__link {
     text-align: center;
+    padding: .25em;
     margin: 0 2em;
+    cursor: pointer;
 }
 
 .nav__links>a.nav__link {
     text-decoration: none;
     text-transform: capitalize;
     color: black;
+}
+
+.nav__link.active:hover {
+    background-color: chartreuse;
+    place-items: center;
+    width: .25em;
+    height: .25em;
+    border-radius: 50%;
 }
 
 .nav__cinema-logo>span {
@@ -57,10 +72,18 @@ nav {
     border-radius: .75em;
     border: none;
     cursor: pointer;
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+
+.nav__button > button:hover {
+    transform: scale(.95);
+    background-color: var(--default-red);
+    color: var(--text-color);
 }
 
 
-.banner__section-hero {
+.banner_hero {
     position: relative;
     margin: 2em;
     padding: 1em 2em;
@@ -99,7 +122,7 @@ nav {
     place-items: center;
 }
 
-.film__schedule-top1 .film__schedule-book button {
+.film__schedule-book button {
     border-radius: .75em;
     border: none;
     padding: 1em 3em;
@@ -107,7 +130,17 @@ nav {
     font-size: .89em;
     font-weight: bold;
     cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 250ms;
 }
+
+.film__schedule-book button:hover {
+    transform: perspective(.5);
+    transform: scale(1.1);
+    background-color: var(--default-red);
+    color: var(--text-color)
+}
+
 
 .film__schedule-top1 .film__schedule-data {
     padding: 0.05em 2em;
@@ -180,22 +213,51 @@ nav {
 
 .film__schedule-top2 .film__schedule-trailer {
     display: flex;
-    justify-content: flex-end;
+    justify-content: center;
+    align-items: center;
     flex-direction: column;
     padding: 1em;
 }
 
 
-.film__schedule-top2 #watch-trailer {
-    padding: 3em 1em;
-    /* float: right; */
+.film__schedule-trailer button#watch-trailer {
+    align-items: center;
+    display: flex;
+    justify-content: center;
+    /* padding: 3em; */
+    width: 6em;
+    height: 6em;
     margin-bottom: 0.5em;
     border: none;
     border-radius: 50%;
     cursor: pointer;
+    transition: ease-out;
+    transition-duration: 250ms;
 }
 
-#watch-detail {
-    padding: 0.25em;
-    font-size: .8em;
+.film__schedule-trailer button:hover {
+    background-color: var(--default-red);
+    color: var(--text-color);
+    transform: scale(1.1);
+}
+#watch-trailer > i {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
+
+.film__schedule-trailer #trailer-detail  {
+    padding: 0.5em;
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
+}
+
+
+.xline {
+    margin: 5em 0;
+    width: 100%;
+    color: red;
 }
