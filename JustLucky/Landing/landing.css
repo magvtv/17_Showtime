@@ -271,6 +271,7 @@ section.main {
 }
 
 .main__header {
+    position: relative;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -286,4 +287,27 @@ section.main {
 .main__header-title h2 {
     text-align: center;
     text-transform: uppercase;
+}
+
+.main__header-search {
+    margin-right: 1em;
+    display: flex;
+    justify-content: flex-end;
+    align-items: center;
+}
+
+.main__header-search i {
+    position: absolute;
+    margin-right: .75em;
+    padding: .5em;
+    /* display: flex; */
+    /* text-align: center; */
+}
+
+.main__header-search input {
+    
+    /* position: relative; */
+    /* margin-left: 2em; */
+    width: 30em;
+    padding: .75em;
 }
