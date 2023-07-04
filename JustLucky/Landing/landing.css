@@ -1,3 +1,8 @@
+:root {
+    --default-red: rgb(220, 20, 60);
+    --text-color: rgb(240, 240, 240);
+}
+
 * {
     margin: 0;
     padding: 0;
@@ -67,6 +72,14 @@ nav {
     border-radius: .75em;
     border: none;
     cursor: pointer;
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+
+.nav__button > button:hover {
+    transform: scale(.95);
+    background-color: var(--default-red);
+    color: var(--text-color);
 }
 
 
@@ -209,12 +222,12 @@ nav {
     border-radius: 50%;
     cursor: pointer;
     transition: ease-out;
-    transition-duration: 400ms;
+    transition-duration: 250ms;
 }
 
 .film__schedule-trailer button:hover {
-    background-color: crimson;
-    color: white;
+    background-color: var(--default-red);
+    color: var(--text-color);
     transform: scale(1.1);
 }
 #watch-trailer > i {
