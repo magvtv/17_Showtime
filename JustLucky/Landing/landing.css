@@ -122,7 +122,7 @@ nav {
     place-items: center;
 }
 
-.film__schedule-top1 .film__schedule-book button {
+.film__schedule-book button {
     border-radius: .75em;
     border: none;
     padding: 1em 3em;
@@ -130,7 +130,17 @@ nav {
     font-size: .89em;
     font-weight: bold;
     cursor: pointer;
+    transition: ease-in-out;
+    transition-duration: 250ms;
 }
+
+.film__schedule-book button:hover {
+    transform: perspective(.5);
+    transform: scale(1.1);
+    background-color: var(--default-red);
+    color: var(--text-color)
+}
+
 
 .film__schedule-top1 .film__schedule-data {
     padding: 0.05em 2em;
