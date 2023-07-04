@@ -8,7 +8,7 @@ a {
     text-decoration: none;
 }
 
-.banner__section-nav {
+.nav_banner {
     position: relative;
     margin: 2em;
 }
@@ -29,13 +29,23 @@ nav {
 
 .nav__links>.nav__link {
     text-align: center;
+    padding: .25em;
     margin: 0 2em;
+    cursor: pointer;
 }
 
 .nav__links>a.nav__link {
     text-decoration: none;
     text-transform: capitalize;
     color: black;
+}
+
+.nav__link.active:hover {
+    background-color: chartreuse;
+    place-items: center;
+    width: .25em;
+    height: .25em;
+    border-radius: 50%;
 }
 
 .nav__cinema-logo>span {
@@ -60,7 +70,7 @@ nav {
 }
 
 
-.banner__section-hero {
+.banner_hero {
     position: relative;
     margin: 2em;
     padding: 1em 2em;
