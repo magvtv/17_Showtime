@@ -9,9 +9,10 @@
     box-sizing: border-box;
 }
 
-a {
-    text-decoration: none;
+body {
+    overflow-x: hidden;
 }
+
 
 .nav_banner {
     position: relative;
@@ -255,9 +256,34 @@ nav {
     font-size: .9em;
 }
 
-
 .xline {
-    margin: 5em 0;
+    margin: 4em 0;
     width: 100%;
-    color: red;
+    border: 1px solid red;
+}
+
+section.main {
+    width: 100%;
+    position: absolute;
+    margin: 0 1em;
+    /* padding: .25em; */
+    border: 1px solid yellow;
+}
+
+.main__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 2em;
+}
+
+.main__header-title {
+    display: flex;
+    justify-content: center;
+    align-self: center;
+}
+
+.main__header-title h2 {
+    text-align: center;
+    text-transform: uppercase;
 }
