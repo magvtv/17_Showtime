@@ -196,16 +196,30 @@ nav {
 }
 
 
-.film__schedule-top2 #watch-trailer {
-    padding: 3em 1em;
-    /* float: right; */
+.film__schedule-trailer #watch-trailer {
+    padding: 3em;
     margin-bottom: 0.5em;
     border: none;
     border-radius: 50%;
     cursor: pointer;
 }
+#watch-trailer > i {
+    display: flex;
+    place-items: center;
+    font-size: 1.5em;
+    font-weight: bold;
+}
 
-#watch-detail {
+.film__schedule-trailer #trailer-detail  {
     padding: 0.25em;
-    font-size: .8em;
+    display: flex;
+    justify-content: center;
+    font-size: .9em;
+}
+
+
+.xline {
+    margin: 5em 0;
+    width: 100%;
+    color: red;
 }
