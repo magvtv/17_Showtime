@@ -273,6 +273,7 @@ section.main {
 
 .main__header {
     position: relative;
+    margin: 0 1em;
     display: flex;
     justify-content: space-between;
     align-items: center;
@@ -308,6 +309,34 @@ section.main {
     width: 30em;
     padding: .75em;
 }
+
+.main__cinema-category {
+    /* border: 2px solid goldenrod; */
+    position: relative;
+    padding: .5em;
+    margin: 0 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.main__cinema-category span {
+    border: 1px solid grey;
+    border-radius: .3125em;
+    margin: 0 2em;
+    padding: .5em;
+    /* display: flex; */
+    /* justify-content: space-between; */
+}
+
+.cinema-type h5 {
+    font-size: 1em;
+    font-weight: normal;
+    text-align: center;
+    text-transform: uppercase;
+    color: aqua;
+}
+
 
 main {
     border: 1px solid yellow;
