@@ -325,30 +325,39 @@ main {
 
 .film_card {
     position: relative;
-    padding: .5em;
-    min-width: 10em;
-    /* border: 1px solid blue; */
+    padding: .75em;
+    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    /* cursor: pointer; */
+    /* transition: ease-in 350ms; */
 }
 
 .film_card img {
-    width: 12.5rem;
-    /* display: flex; */
-    /* width: 75%; */
-    height: 18.75em;
-    /* justify-content: center; */
-    /* align-items: center; */
+    width: 15rem;
+    height: 15em;
     object-fit: cover;
-    border: 1px solid var(--default-red);
+    border-radius: .5em;
+    transition-property: inherit;
+    transition-duration: 250ms;
 }
 
+
+.film_card img:hover {
+    transform: scale(.95);
+    border: 2px solid var(--default-red);
+}
+
+
 .film_about {
-    padding-top: .5em;
+    margin: 1.25em 0 .75em 0;
     display: flex;
+    padding: .5em;
     text-align: center;
     flex-direction: column;
-    /* justify-content: start; */
+    border: 2px solid var(--default-red);
+    align-items: stretch;
+    justify-content: stretch;
 }
