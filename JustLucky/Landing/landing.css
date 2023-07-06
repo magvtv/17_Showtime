@@ -266,6 +266,8 @@ section.main {
     width: 100%;
     position: absolute;
     margin: 0 1em;
+    margin-left: auto;
+    margin-right: auto;
     /* padding: .25em; */
 }
 
@@ -274,7 +276,7 @@ section.main {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 2em;
+    padding: 1em;
 }
 
 .main__header-title {
@@ -308,9 +310,14 @@ section.main {
 }
 
 main {
-    position: absolute;
+    /* position: absolute; */
     border: 1px solid yellow;
     padding: 1em;
+    margin-top: 2em;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    justify-content: space-evenly;
+    /* align-content: center; */
     /* padding: 1em; */
     /* display: inline-grid; */
     /* gap: .5em .5em; */
@@ -320,23 +327,23 @@ main {
 
 .film_card {
     position: relative;
-    /* margin: 0 0 0 2em; */
-    padding: 0 1em;
+    padding: .5em;
     /* background-color: green; */
-    aspect-ratio: 9/16;
     min-width: 10em;
-    /* display: flex; */
+    /* border: 1px solid blue; */
+    display: flex;
     flex-direction: column;
     justify-content: center;
-    align-items: end;
+    align-items: center;
 }
 
 .film_card img {
     width: 12.5rem;
+    /* display: flex; */
     /* width: 75%; */
     height: 18.75em;
-    justify-content: center;
-    align-items: center;
+    /* justify-content: center; */
+    /* align-items: center; */
     object-fit: cover;
     border: 1px solid var(--default-red);
 }
@@ -346,5 +353,5 @@ main {
     display: flex;
     text-align: center;
     flex-direction: column;
-    justify-content: start;
+    /* justify-content: start; */
 }
