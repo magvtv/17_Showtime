@@ -310,29 +310,22 @@ section.main {
 }
 
 main {
-    /* position: absolute; */
     border: 1px solid yellow;
     padding: 1em;
     margin-top: 2em;
     display: grid;
-    /* align-content: center; */
-    /* padding: 1em; */
-    /* display: inline-grid; */
-    /* gap: .5em .5em; */
-    /* grid-template-columns: max-content; */
-    /* grid-column: calc(100% - 2em); */
 }
 
 .main__films-content {
     display: grid;
     grid-template-columns: repeat(4, 1fr);
+    grid-template-rows: min-content 1fr min-content;
     justify-content: space-evenly;
 }
 
 .film_card {
     position: relative;
     padding: .5em;
-    /* background-color: green; */
     min-width: 10em;
     /* border: 1px solid blue; */
     display: flex;
