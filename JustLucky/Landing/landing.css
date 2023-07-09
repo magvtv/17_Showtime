@@ -58,6 +58,7 @@ nav {
     display: flex;
     justify-content: center;
     align-items: center;
+    cursor: pointer;
 }
 
 .nav__cinema-logo>span>h1 {
@@ -77,7 +78,7 @@ nav {
     transition-duration: 250ms;
 }
 
-.nav__button > button:hover {
+.nav__button>button:hover {
     transform: scale(.95);
     background-color: var(--default-red);
     color: var(--text-color);
@@ -174,7 +175,7 @@ nav {
     margin-top: 6em;
 }
 
-.slider__arrows > button {
+.slider__arrows>button {
     padding: .5em 1em;
     background-color: transparent;
     border-radius: .25em;
@@ -183,7 +184,7 @@ nav {
     outline: none;
 }
 
-.slider__arrows > button > i {
+.slider__arrows>button>i {
     display: flex;
     justify-content: center;
     place-items: center;
@@ -192,13 +193,15 @@ nav {
 .slider__arrows #prev {
     margin-right: 10em;
 }
+
 .slider__arrows #next {
     margin-left: 10em;
 }
 
-#prev, #next {
+#prev,
+#next {
     cursor: pointer;
-    
+
 }
 
 .slider__numbers {
@@ -241,7 +244,8 @@ nav {
     color: var(--text-color);
     transform: scale(1.1);
 }
-#watch-trailer > i {
+
+#watch-trailer>i {
     display: flex;
     justify-content: center;
     align-items: center;
@@ -249,7 +253,7 @@ nav {
     font-weight: bold;
 }
 
-.film__schedule-trailer #trailer-detail  {
+.film__schedule-trailer #trailer-detail {
     padding: 0.5em;
     display: flex;
     justify-content: center;
@@ -396,7 +400,7 @@ main {
     justify-content: center;
 }
 
-.film_about > .film_title {
+.film_about>.film_title {
     /* display: inline-block; */
     padding: 0 0 .25em 0;
     /* overflow: hidden; */
@@ -410,13 +414,12 @@ main {
 
 .film_about .film_detail {
     /* padding: .25em .5em; */
-    /* border: 1px solid greenyellow; */
     display: flex;
     justify-content: space-evenly;
     align-items: center;
 }
 
-.film_detail > span {
+.film_detail>span {
     margin: 0 .75em;
     text-align: center;
     font-size: .85em;
@@ -426,12 +429,39 @@ main {
     justify-content: center;
 }
 
-.film_detail > .film_duration {
+.film_detail>.film_duration {
     place-items: center;
     padding: .25em;
 }
 
-.film_detail > .film_genre {
+.film_detail>.film_genre {
     padding: .25em;
     text-transform: uppercase;
+}
+
+
+
+.page__footer {
+    border: 1px solid greenyellow;
+    width: 100%;
+    margin: 2em 1em;
+    padding: 2em 1em;
+    position: absolute;
+}
+
+.page__footer-container {
+    position: relative;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.page__footer-container>.cinema-logo {
+    text-align: center;
+    text-transform: uppercase;
+
+}
+
+.page__footer-container>.cinema-logo:hover {
+    color: blue;
 }
