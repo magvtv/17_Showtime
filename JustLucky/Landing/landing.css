@@ -265,7 +265,6 @@ nav {
 
 section.main {
     width: 100%;
-    position: absolute;
     margin: 0 1em;
     margin-left: auto;
     margin-right: auto;
@@ -307,6 +306,7 @@ section.main {
 }
 
 .main__header-search input {
+    border: .125em solid black;
     width: 30em;
     padding: .75em;
 }
@@ -325,7 +325,8 @@ section.main {
     border: 1px solid grey;
     border-radius: .3125em;
     margin: 0 2em;
-    padding: .25em 2em;
+    padding: .5em 2em;
+    cursor: pointer;
     /* display: flex; */
     /* justify-content: space-between; */
 }
@@ -335,29 +336,28 @@ section.main {
     font-weight: normal;
     text-align: center;
     text-transform: uppercase;
-    color: aqua;
+    color: black;
 }
 
 
 main {
-    border: 1px solid yellow;
     padding: 1em;
     margin-top: 2em;
     display: grid;
-    background-color: blueviolet;
+    background-color: rgb(65, 63, 63);
 }
 
 .main__films-content {
-    display: grid;
+    display: flex;
     grid-template-columns: repeat(4, 1fr);
     grid-template-rows: min-content 1fr min-content;
     justify-content: space-evenly;
 }
 
+
 .film_card {
     position: relative;
     padding: .75em;
-    border: 1px solid blue;
     display: flex;
     flex-direction: column;
     justify-content: center;
@@ -373,17 +373,19 @@ main {
     object-fit: cover;
     border-radius: .5em;
     transition-duration: 250ms;
+    cursor: pointer;
 }
 
 
 .film_card img:hover {
     transform: scale(.95);
-    border: 2px solid var(--default-red);
+    /* border: 2px solid var(--default-red); */
 }
 
 
 .film_about {
     /* position: absolute; */
+    cursor: pointer;
     margin-top: .75em;
     display: flex;
     padding: .5em;
