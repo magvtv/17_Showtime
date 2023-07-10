@@ -444,24 +444,54 @@ main {
 .page__footer {
     border: 1px solid greenyellow;
     width: 100%;
-    margin: 2em 1em;
-    padding: 2em 1em;
+    margin: 0 1em;
+    padding: 4em .5em;
     position: absolute;
 }
 
 .page__footer-container {
     position: relative;
+    overflow: hidden;
     display: flex;
+    flex: calc(100% /3);
     justify-content: space-between;
     align-items: center;
+    font-size: 0.9em;
 }
 
 .page__footer-container>.cinema-logo {
     text-align: center;
     text-transform: uppercase;
-
+    transition: 250ms ease-out;
+    cursor: pointer;
 }
 
 .page__footer-container>.cinema-logo:hover {
+    transform: scale(.9);
     color: blue;
+}
+
+
+.page__footer-container > .nav__links {
+    /* border: 1px solid cadetblue; */
+    padding: 1em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 auto;
+    width: 70%;
+}
+
+.page__footer-container > .contact-socials {
+    padding: 1em;
+    margin: 0 .25em;
+}
+
+.contact-socials > span {
+    flex-direction: row;
+    text-align: center;
+    padding: .25em;
+    margin: 0 .75em;
+    border: 1px solid grey;
+    /* padding: 1em; */
 }
