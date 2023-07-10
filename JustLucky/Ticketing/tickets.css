@@ -1,0 +1,158 @@
+:root {
+    --bkgrd-clr: rgb(90, 82, 82);
+    --button-clr: rgb(223, 221, 214);
+    --alt-button-clr: rgb(199, 22, 9);
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    background-color: var(--bkgrd-clr);
+}
+
+body {
+    overflow-x: hidden;
+}
+
+.nav_banner {
+    position: relative;
+    margin: 2em;
+}
+
+nav {
+    overflow: hidden;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.nav__links {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+}
+
+.nav__links>.nav__link {
+    text-align: center;
+    padding: .25em;
+    margin: 0 2em;
+    cursor: pointer;
+}
+
+.nav__links>a.nav__link {
+    text-decoration: none;
+    text-transform: capitalize;
+    color: black;
+}
+
+/* 
+.nav__link.active:hover {
+    background-color: chartreuse;
+    place-items: center;
+    width: .25em;
+    height: .25em;
+    border-radius: 50%;
+} */
+
+.nav__cinema-logo>span {
+    display: flex;
+    justify-content: center;
+    /* align-items: center; */
+    cursor: pointer;
+}
+
+.nav__cinema-logo>span>h1 {
+    text-transform: uppercase;
+    text-align: center;
+    font-size: 1.25em;
+}
+
+.nav__button>button {
+    background-color: var(--button-clr);
+    text-align: center;
+    text-transform: capitalize;
+    padding: .75em 2em;
+    border-radius: .75em;
+    border: none;
+    cursor: pointer;
+    transition: ease-in;
+    transition-duration: 250ms;
+}
+
+.nav__button>button:hover {
+    transform: scale(.95);
+    background-color: var(--alt-button-clr);
+    color: var(--button-clr);
+}
+
+section {
+    top: 0;
+    left: 0;
+    position: relative;
+    display: flex;
+    /* flex-direction: column; */
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 1em;
+    padding: .5em;
+}
+
+section > h2 {
+    font-weight: normal;
+    padding: .25em .5em;
+    margin: 0.25em;
+    /* border: 1px solid pink; */
+}
+
+select {
+    place-items: center;
+    padding: 0.5em;
+    outline: none;
+    border-radius: .625em;
+    margin-left: 3em;
+    border: .025em solid black;
+    color: white;
+    transition: all 250ms;
+}
+
+select > option {
+    padding: .25em;
+    background-color: var(--bkgrd-clr);
+}
+
+select:hover {
+    background-color: #20db0f;
+}
+
+
+.film_section > .film_title {
+    font-size: 2.5em;
+    background-image: linear-gradient(60deg, #fcf805, #20db0f);
+        background-clip: text;
+        color: transparent;
+}
+
+.book_button {
+    margin-top: 3em;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+button#bookButton {
+    /* border: 1px solid #20db0f; */
+    border: 2px solid white;
+    padding: 1.25em 2em;
+    font-weight: bold;
+    text-transform: uppercase;
+    cursor: pointer;
+    transition: ease-in 200ms;
+}
+
+button:hover {
+    color: white;
+    border-radius: .25em;
+    background-color: #20db0f;
+}
