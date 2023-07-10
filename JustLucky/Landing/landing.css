@@ -1,12 +1,14 @@
 :root {
     --default-red: rgb(220, 20, 60);
     --text-color: rgb(240, 240, 240);
+    --bkgrd-clr: rgb(90, 82, 82);
 }
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    background-color: var(--bkgrd-clr);
 }
 
 body {
@@ -224,6 +226,10 @@ nav {
 }
 
 
+
+button#watch-trailer i {
+    background: transparent;
+}
 .film__schedule-trailer button#watch-trailer {
     align-items: center;
     display: flex;
