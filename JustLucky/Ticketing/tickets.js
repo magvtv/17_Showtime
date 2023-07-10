@@ -18,4 +18,8 @@ const ticketData = {
     seat: selectedSeat
 }
 
+const ticketJSON = JSON.stringify(ticketData);
+const ticketURL = "mailto: magutujr@gmail.com?subject = Ticket % 20Booking & body=" + encodeURIComponent(ticketJSON);
+window.location.href = ticketURL
+
 console.log(ticketData)
