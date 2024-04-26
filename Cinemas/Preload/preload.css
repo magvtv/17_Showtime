@@ -2,7 +2,7 @@
 
 
 :root {
-    --intro-font-color: aqua;
+    --intro-font-color: rgb(73, 223, 165);
 }
 
 
@@ -68,7 +68,7 @@ body::before {
     font-weight: 700;
     overflow: hidden;
     white-space: nowrap;
-    animation: typing 5s steps(120) infinite;
+    animation: typing 8s steps(100) infinite;
 }
 
 @keyframes typing {
