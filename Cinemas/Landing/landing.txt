@@ -1,0 +1,9 @@
+simple header
+simple hero section
+- call to action 'watch movie' and 'check trailer'
+- later come to implement live trailer
+
+film section
+- popular films
+- recommended for you 
+- your last watch
